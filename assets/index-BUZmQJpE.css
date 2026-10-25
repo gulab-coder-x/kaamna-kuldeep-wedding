@@ -5729,32 +5729,4 @@ button {
     }
 }
 
-/* === SHORT IPHONE VIEWPORTS (SE / BROWSER BOTTOM TOOLBAR) === */
-@media (max-height: 720px) {
-    [code-path*="IntroGate.tsx:94:9"] {
-        opacity: 0.35 !important;
-        max-height: 45px !important;
-    }
-    [code-path*="IntroGate.tsx:110:11"] {
-        width: 3rem !important;
-    }
-    .gate-names {
-        font-size: 2rem !important;
-        line-height: 1 !important;
-    }
-    [code-path*="IntroGate.tsx:103:9"] {
-        gap: 0.2rem !important;
-        padding-top: 0 !important;
-        padding-bottom: 0.25rem !important;
-        margin-top: auto !important;
-        margin-bottom: auto !important;
-    }
-    [code-path*="IntroGate.tsx:140:11"] {
-        padding-top: 0.45rem !important;
-        padding-bottom: 0.45rem !important;
-        padding-left: 1.25rem !important;
-        padding-right: 1.25rem !important;
-        margin-top: 0.25rem !important;
-        font-size: 11px !important;
-    }
-}
+
