@@ -5710,3 +5710,23 @@ button {
     cursor: pointer !important;
 }
 
+/* === ULTRA-SMOOTH MOBILE SCROLLING & GPU COMPOSITION === */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 768px) {
+    /* Prevent heavy repaints on mobile GPUs */
+    img {
+        content-visibility: auto;
+    }
+    [code-path*="IntroGate.tsx:35:7"],
+    [code-path*="IntroGate.tsx:55:7"],
+    [code-path*="Hero.tsx:52:7"],
+    [code-path*="Hero.tsx:180:11"] {
+        will-change: transform;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
+}
+
+
