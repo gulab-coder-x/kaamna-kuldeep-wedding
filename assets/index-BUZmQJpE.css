@@ -5749,4 +5749,9 @@ img.w-20 {
     padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
+/* === REVEAL COMPONENT TOP MARGIN === */
+[code-path="src/components/Reveal.tsx:15:5"] {
+    margin-top: 2rem !important;
+}
+
 
