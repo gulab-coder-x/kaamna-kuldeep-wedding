@@ -5573,7 +5573,10 @@ a.\[a\&\]\:hover\:text-accent-foreground:hover {
     --tw-gradient-to: rgb(98 39 57 / 0) var(--tw-gradient-to-position) !important;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
-.to-\[\#622739\] { --tw-gradient-to: #622739 var(--tw-gradient-to-position) !important; }
+.to-\[\#622739\] { 
+    /* --tw-gradient-to: #622739 var(--tw-gradient-to-position) !important;  */
+        --tw-gradient-to: #622739b8 var(--tw-gradient-to-position) !important;
+}
 .to-\[\#1f0a10\]\/90 { --tw-gradient-to: rgb(31 10 16 / 0.95) var(--tw-gradient-to-position) !important; }
 .bg-\[\#17143c\] { background-color: #481b28 !important; }
 
@@ -5787,7 +5790,29 @@ h2.font-script.text-gold {
     opacity: 0.9 !important;
     max-height: none !important;
 }
+/* IntroGate Open Invitation button positioned below mandala */
+[code-path*="IntroGate.tsx:103:9"] {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    top: min(calc(50% + 42vmin + 1.25rem), calc(100% - 5rem - env(safe-area-inset-bottom, 0px))) !important;
+    width: 100% !important;
+    max-width: 24rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 1rem !important;
+    z-index: 50 !important;
+    pointer-events: auto !important;
+}
+
 [code-path*="IntroGate.tsx:140:11"] {
+    margin-top: 0 !important;
     padding-top: 0.875rem !important;
     padding-bottom: 0.875rem !important;
     padding-left: 2rem !important;
@@ -5801,6 +5826,22 @@ h2.font-script.text-gold {
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
         font-size: 13px !important;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 850px) {
+    [code-path*="IntroGate.tsx:47:9"],
+    [code-path*="IntroGate.tsx:67:9"] {
+        width: 66vmin !important;
+    }
+    [code-path*="IntroGate.tsx:47:9"] {
+        right: -33vmin !important;
+    }
+    [code-path*="IntroGate.tsx:67:9"] {
+        left: -33vmin !important;
+    }
+    [code-path*="IntroGate.tsx:103:9"] {
+        top: min(calc(50% + 33vmin + 0.85rem), calc(100% - 4.25rem)) !important;
     }
 }
 
@@ -5892,21 +5933,21 @@ h2.font-script.text-gold {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 0.85rem !important;
+    gap: 0.65rem !important;
     width: 100% !important;
-    max-width: 230px !important;
-    margin-top: 0.35rem !important;
-    margin-bottom: 0.35rem !important;
+    max-width: 170px !important;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
 }
 
 .invite-with-text {
     font-family: 'Great Vibes', cursive !important;
-    font-size: 2.65rem !important;
+    font-size: 1.85rem !important;
     line-height: 1 !important;
     color: #622739 !important;
     -webkit-text-fill-color: #622739 !important;
-    text-shadow: 0 1px 3px rgba(197, 160, 89, 0.55), 0 0 1px rgba(98, 39, 57, 0.4) !important;
-    padding: 0 0.5rem !important;
+    text-shadow: 0 1px 2px rgba(197, 160, 89, 0.45) !important;
+    padding: 0 0.35rem !important;
     font-style: italic !important;
     letter-spacing: 0.02em !important;
     display: inline-block !important;
@@ -5915,19 +5956,19 @@ h2.font-script.text-gold {
 
 @media (min-width: 380px) {
     .invite-with-text {
-        font-size: 3rem !important;
+        font-size: 2.15rem !important;
     }
 }
 
 @media (min-width: 640px) {
     .invite-with-text {
-        font-size: 3.5rem !important;
+        font-size: 2.45rem !important;
     }
 }
 
 .invite-with-line {
-    height: 1.5px !important;
-    opacity: 0.9 !important;
+    height: 1.2px !important;
+    opacity: 0.85 !important;
     background: linear-gradient(to right, transparent, #C5A059 70%, #622739 100%) !important;
 }
 
@@ -6113,14 +6154,15 @@ footer[code-path*="Footer.tsx"],
     display: none !important;
 }
 
-/* === HERO AUR FOOTER KO CHHOD KE SABKE BACKGROUND (DOWNLOAD-7) === */
+/* === HERO AUR FOOTER KO CHHOD KE SABKE BACKGROUND === */
 .wedding-middle-wrapper,
 [code-path*="Home.tsx:52:7"] > div.relative:not([code-path*="Hero"]):not([code-path*="Footer"]) {
     background-color: #FAF7F2 !important;
-    background-image: url('./download-7.webp') !important;
+    background-image: url('./8bd0fc7011cc82c915399562c9d47165.webp'), url('./8bd0fc7011cc82c915399562c9d47165.jpg') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center top !important;
+    image-rendering: -webkit-optimize-contrast !important;
 }
 
 /* === MOBILE PERFORMANCE & SMOOTH 60FPS RENDERING === */
