@@ -6051,13 +6051,6 @@ footer[code-path*="Footer.tsx"],
     line-height: 1 !important;
 }
 
-/* === HERO ARCH BACKGROUND IMAGE === */
-[code-path*="Hero.tsx:80:11"] {
-    background-image: url('./assets/95f84977489612415e5f46409e6df950.jpg') !important;
-    background-size: cover !important;
-    background-position: center !important;
-}
-
 /* === HIDE AURORA OVERLAY FROM COUNTDOWN / COUNTER SECTION === */
 [code-path*="Couple.tsx:48:7"],
 [code-path*="Couple.tsx"] [code-path*="Aurora.tsx"],
@@ -6069,4 +6062,20 @@ footer[code-path*="Footer.tsx"],
 [code-path*="Home.tsx:52:7"] > div.relative:not([code-path*="Hero"]):not([code-path*="Footer"]) {
     background-color: #FAF7F2 !important;
     background: linear-gradient(180deg, #FAF7F2 0%, #FFFDF9 18%, #FAF3EB 42%, #FFFDF9 68%, #F7EFE4 100%) !important;
+}
+
+/* === MOBILE PERFORMANCE & SMOOTH 60FPS RENDERING === */
+@media (max-width: 640px) {
+    .blur-\[90px\], .blur-\[100px\] {
+        filter: blur(35px) !important;
+    }
+    .blur-\[60px\], .blur-\[70px\] {
+        filter: blur(25px) !important;
+    }
+    [code-path*="Events.tsx:13:5"],
+    [code-path*="Venue.tsx:8:5"],
+    footer[code-path*="Footer.tsx"] {
+        content-visibility: auto;
+        contain-intrinsic-size: 1px 700px;
+    }
 }
