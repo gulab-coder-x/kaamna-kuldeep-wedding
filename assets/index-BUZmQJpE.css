@@ -5887,47 +5887,52 @@ h2.font-script.text-gold {
     }
 }
 
-/* === STYLISH 'WITH' TYPOGRAPHY & GOLD METALLIC SHIMMER === */
+/* === STYLISH 'WITH' TYPOGRAPHY & HIGH-CONTRAST ROYAL VISIBILITY === */
 .invite-with-container {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 0.75rem !important;
+    gap: 0.85rem !important;
     width: 100% !important;
-    max-width: 210px !important;
-    margin-top: 0.25rem !important;
-    margin-bottom: 0.25rem !important;
+    max-width: 230px !important;
+    margin-top: 0.35rem !important;
+    margin-bottom: 0.35rem !important;
 }
 
 .invite-with-text {
     font-family: 'Great Vibes', cursive !important;
-    font-size: 2.15rem !important;
+    font-size: 2.65rem !important;
     line-height: 1 !important;
-    background: linear-gradient(135deg, #B58428 0%, #D4AF37 35%, #F7E4A8 50%, #C5A059 70%, #9E701E 100%) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    color: transparent !important;
-    filter: drop-shadow(0 1px 4px rgba(197, 160, 89, 0.45));
-    padding: 0 0.35rem !important;
+    color: #622739 !important;
+    -webkit-text-fill-color: #622739 !important;
+    text-shadow: 0 1px 3px rgba(197, 160, 89, 0.55), 0 0 1px rgba(98, 39, 57, 0.4) !important;
+    padding: 0 0.5rem !important;
     font-style: italic !important;
-    transform: rotate(-3deg);
+    letter-spacing: 0.02em !important;
+    display: inline-block !important;
+    opacity: 1 !important;
 }
 
 @media (min-width: 380px) {
     .invite-with-text {
-        font-size: 2.5rem !important;
+        font-size: 3rem !important;
     }
 }
 
 @media (min-width: 640px) {
     .invite-with-text {
-        font-size: 2.9rem !important;
+        font-size: 3.5rem !important;
     }
 }
 
 .invite-with-line {
-    height: 1px !important;
-    opacity: 0.8 !important;
+    height: 1.5px !important;
+    opacity: 0.9 !important;
+    background: linear-gradient(to right, transparent, #C5A059 70%, #622739 100%) !important;
+}
+
+.invite-with-container span:last-child.invite-with-line {
+    background: linear-gradient(to left, transparent, #C5A059 70%, #622739 100%) !important;
 }
 
 /* === INVITATION SECTION TEXTURE & SUBTLE GRADIENT === */
