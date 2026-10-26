@@ -5887,6 +5887,49 @@ h2.font-script.text-gold {
     }
 }
 
+/* === STYLISH 'WITH' TYPOGRAPHY & GOLD METALLIC SHIMMER === */
+.invite-with-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    max-width: 210px !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.invite-with-text {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 2.15rem !important;
+    line-height: 1 !important;
+    background: linear-gradient(135deg, #B58428 0%, #D4AF37 35%, #F7E4A8 50%, #C5A059 70%, #9E701E 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    filter: drop-shadow(0 1px 4px rgba(197, 160, 89, 0.45));
+    padding: 0 0.35rem !important;
+    font-style: italic !important;
+    transform: rotate(-3deg);
+}
+
+@media (min-width: 380px) {
+    .invite-with-text {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (min-width: 640px) {
+    .invite-with-text {
+        font-size: 2.9rem !important;
+    }
+}
+
+.invite-with-line {
+    height: 1px !important;
+    opacity: 0.8 !important;
+}
+
 /* === INVITATION SECTION TEXTURE & SUBTLE GRADIENT === */
 
 
