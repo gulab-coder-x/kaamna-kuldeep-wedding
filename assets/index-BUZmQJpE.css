@@ -6094,6 +6094,13 @@ footer[code-path*="Footer.tsx"],
     line-height: 1 !important;
 }
 
+/* === HERO ARCH BACKGROUND IMAGE === */
+[code-path*="Hero.tsx:80:11"] {
+    background-image: url('./assets/95f84977489612415e5f46409e6df950.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
 /* === HIDE AURORA OVERLAY FROM COUNTDOWN / COUNTER SECTION === */
 [code-path*="Couple.tsx:48:7"],
 [code-path*="Couple.tsx"] [code-path*="Aurora.tsx"],
