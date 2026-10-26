@@ -6056,3 +6056,10 @@ footer[code-path*="Footer.tsx"],
     background-size: cover !important;
     background-position: center !important;
 }
+
+/* === HIDE AURORA OVERLAY FROM COUNTDOWN / COUNTER SECTION === */
+[code-path*="Couple.tsx:48:7"],
+[code-path*="Couple.tsx"] [code-path*="Aurora.tsx"],
+[code-path*="Couple.tsx:47:5"] > [code-path*="Aurora.tsx"] {
+    display: none !important;
+}

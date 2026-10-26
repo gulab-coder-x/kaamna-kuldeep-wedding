@@ -106,7 +106,6 @@ Kaamna with Kuldeep
     "code-path": "src/sections/Couple.tsx:47:5",
     className: "relative overflow-hidden px-4 sm:px-6 py-20 sm:py-24",
     children: [
-      C.jsx(A1, { "code-path": "src/sections/Couple.tsx:48:7", className: "opacity-60" }),
       C.jsx(fh, { "code-path": "src/sections/Couple.tsx:49:7", kicker: "Save The Date", title: "Wedding Celebration Begins In" }),
       C.jsxs(Cn, {
         "code-path": "src/sections/Couple.tsx:51:7",
