@@ -6141,3 +6141,10 @@ footer[code-path*="Footer.tsx"],
     font-weight: 700 !important;
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6) !important;
 }
+
+/* === HERO ARCH BACKGROUND IMAGE === */
+[code-path*="Hero.tsx:80:11"] {
+    background-image: url('./assets/95f84977489612415e5f46409e6df950.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
