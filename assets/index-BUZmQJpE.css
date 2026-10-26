@@ -5755,3 +5755,297 @@ img.w-20 {
 }
 
 
+
+/* === REVEAL COMPONENT TITLE CLIPPING FIX === */
+[code-path="src/components/Reveal.tsx:39:7"],
+h2.font-script.text-gold {
+    line-height: 1.35 !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.5rem !important;
+    overflow: visible !important;
+    display: block !important;
+}
+
+/* === INVITATION MESSAGE SINGLE LINE FIX === */
+[code-path="src/sections/InviteMessage.tsx:44:5"] .whitespace-nowrap {
+    white-space: nowrap !important;
+}
+
+/* === CHITHI / BOOK-FLIP AESTHETIC COUNTDOWN === */
+.chithi-flip-card {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px -4px rgba(98, 39, 57, 0.12), 0 4px 10px -2px rgba(197, 160, 89, 0.2) !important;
+}
+.chithi-flip-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px -4px rgba(98, 39, 57, 0.18), 0 6px 14px -2px rgba(197, 160, 89, 0.28) !important;
+}
+
+/* Garland top and Button padding restoration */
+[code-path*="IntroGate.tsx:94:9"] {
+    opacity: 0.9 !important;
+    max-height: none !important;
+}
+[code-path*="IntroGate.tsx:140:11"] {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    font-size: 12.5px !important;
+}
+@media (min-width: 640px) {
+    [code-path*="IntroGate.tsx:140:11"] {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+        font-size: 13px !important;
+    }
+}
+
+/* === HERO COUPLE NAMES GRAND TYPOGRAPHY === */
+[code-path*="Hero.tsx:138:13"],
+[code-path*="Hero.tsx:154:13"],
+.hero-couple-name {
+    font-size: 3.5rem !important;
+    line-height: 1.05 !important;
+    color: #b82759 !important;
+    text-shadow: 0 2px 10px rgba(184, 39, 89, 0.12) !important;
+}
+
+@media (min-width: 380px) {
+    [code-path*="Hero.tsx:138:13"],
+    [code-path*="Hero.tsx:154:13"],
+    .hero-couple-name {
+        font-size: 4.1rem !important;
+    }
+}
+
+@media (min-width: 640px) {
+    [code-path*="Hero.tsx:138:13"],
+    [code-path*="Hero.tsx:154:13"],
+    .hero-couple-name {
+        font-size: 4.85rem !important;
+    }
+}
+
+[code-path*="Hero.tsx:146:13"] {
+    font-size: 2.2rem !important;
+    line-height: 1 !important;
+    margin-top: 0.15rem !important;
+    margin-bottom: 0.15rem !important;
+    color: #C5A059 !important;
+}
+
+@media (min-width: 640px) {
+    [code-path*="Hero.tsx:146:13"] {
+        font-size: 2.75rem !important;
+    }
+}
+
+/* === HERO COUPLE NAMES MID-CENTER ALIGNMENT === */
+[code-path*="Hero.tsx:112:11"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding-top: 0 !important;
+}
+
+/* === INVITATION MESSAGE CARD PADDING & COUPLE NAMES SIZING === */
+[code-path*="InviteMessage.tsx:66:9"] {
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+}
+@media (min-width: 640px) {
+    [code-path*="InviteMessage.tsx:66:9"] {
+        padding-top: 4.25rem !important;
+        padding-bottom: 4.25rem !important;
+    }
+}
+
+[code-path*="InviteMessage.tsx:66:9"] h2.font-script,
+.invite-couple-name {
+    font-size: 2.85rem !important;
+    line-height: 1.15 !important;
+    color: #b82759 !important;
+}
+
+@media (min-width: 380px) {
+    [code-path*="InviteMessage.tsx:66:9"] h2.font-script,
+    .invite-couple-name {
+        font-size: 3.25rem !important;
+    }
+}
+
+@media (min-width: 640px) {
+    [code-path*="InviteMessage.tsx:66:9"] h2.font-script,
+    .invite-couple-name {
+        font-size: 3.85rem !important;
+    }
+}
+
+/* === INVITATION SECTION TEXTURE & SUBTLE GRADIENT === */
+
+
+[code-path*="InviteMessage.tsx:48:11"] {
+    color: #622739 !important;
+    text-shadow: 0 1px 4px rgba(98, 39, 57, 0.15) !important;
+}
+
+[code-path*="InviteMessage.tsx:51:11"] {
+    color: #3e1420 !important;
+    font-weight: 700 !important;
+}
+
+[code-path*="InviteMessage.tsx:66:9"] {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.10), 0 0 0 1px rgba(197, 160, 89, 0.35) !important;
+}
+
+/* === INVITATION MESSAGE CARD BACKGROUND GRADIENT & TEXTURE === */
+[code-path*="InviteMessage.tsx:66:9"] {
+    position: relative !important;
+    overflow: hidden !important;
+    background: linear-gradient(180deg, #FFFDF9 0%, #FAF5EB 50%, #F3E8D5 100%) !important;
+    border: 2px solid rgba(197, 160, 89, 0.65) !important;
+    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.12), 0 0 0 1px rgba(197, 160, 89, 0.25) !important;
+}
+
+
+/* === CIRCULAR COUNTDOWN UNITS === */
+.chithi-flip-card {
+    border-radius: 9999px !important;
+    aspect-ratio: 1 / 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+[code-path="src/sections/CountdownCard"],
+.countdown-main-card {
+    position: relative !important;
+    overflow: hidden !important;
+    background: linear-gradient(180deg, #FFFDF9 0%, #FAF5EB 50%, #F3E8D5 100%) !important;
+    border: 2px solid rgba(197, 160, 89, 0.65) !important;
+    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.12), 0 0 0 1px rgba(197, 160, 89, 0.25) !important;
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+}
+
+@media (min-width: 640px) {
+    [code-path="src/sections/CountdownCard"],
+    .countdown-main-card {
+        padding-top: 4.25rem !important;
+        padding-bottom: 4.25rem !important;
+    }
+}
+
+/* === EVENTS CARD BACKGROUND SAME AS COUNTDOWN === */
+[code-path*="Events.tsx:28:9"] {
+    position: relative !important;
+    overflow: hidden !important;
+    background: linear-gradient(180deg, #FFFDF9 0%, #FAF5EB 50%, #F3E8D5 100%) !important;
+    border: 2px solid rgba(197, 160, 89, 0.65) !important;
+    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.12), 0 0 0 1px rgba(197, 160, 89, 0.25) !important;
+}
+
+/* === EVENTS & INVITATION SECTION PADDING ADJUSTMENT === */
+[code-path*="Events.tsx:13:5"] {
+    padding-bottom: 0 !important;
+}
+
+[code-path*="InviteMessage.tsx:44:5"] {
+    padding-bottom: 6rem !important;
+}
+
+/* === FOOTER VISIBILITY & HERO-STYLE AESTHETICS === */
+footer[code-path*="Footer.tsx"],
+[code-path="src/sections/Footer.tsx:21:5"] {
+    background-color: #2b0e17 !important;
+}
+
+[code-path*="Footer.tsx:44:7"] {
+    border-color: rgba(226, 200, 143, 0.45) !important;
+    background: rgba(43, 14, 23, 0.45) !important;
+}
+
+[code-path*="Footer.tsx:50:13"] {
+    color: #F8DC89 !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.35em !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7) !important;
+}
+
+[code-path*="Footer.tsx:62:9"] {
+    -webkit-text-stroke: 1.5px rgba(248, 220, 137, 0.95) !important;
+    color: rgba(248, 220, 137, 0.35) !important;
+    text-shadow: 0 0 25px rgba(226, 200, 143, 0.35) !important;
+    opacity: 1 !important;
+}
+
+[code-path*="Footer.tsx:68:7"] {
+    opacity: 1 !important;
+    transform: none !important;
+    margin-top: 3.5rem !important;
+}
+
+[code-path*="Footer.tsx:70:9"] {
+    font-size: 2.75rem !important;
+    line-height: 1.35 !important;
+    padding: 0.25rem 0.5rem !important;
+    overflow: visible !important;
+    background: linear-gradient(125deg, #FFF8E1 0%, #F8DC89 25%, #E2C88F 55%, #FFE28F 80%, #D4AF37 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    filter: drop-shadow(0 2px 14px rgba(226, 200, 143, 0.6)) !important;
+}
+
+@media (min-width: 640px) {
+    [code-path*="Footer.tsx:70:9"] {
+        font-size: 3.4rem !important;
+    }
+}
+
+[code-path*="Footer.tsx:73:9"] {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0.3em !important;
+    color: #FAF5EA !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7) !important;
+}
+
+@media (min-width: 640px) {
+    [code-path*="Footer.tsx:73:9"] {
+        font-size: 13.5px !important;
+    }
+}
+
+[code-path*="Footer.tsx:77:9"] {
+    border: 1.5px solid #E2C88F !important;
+    background-color: rgba(98, 39, 57, 0.85) !important;
+    color: #FFF5D0 !important;
+    font-size: 11.5px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.25em !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(226, 200, 143, 0.25) !important;
+}
+
+/* === COUNTDOWN COLON / SEMICOLON ALIGNMENT === */
+.countdown-colon,
+.countdown-main-card span.self-center {
+    margin-bottom: 27px !important;
+}
+
+/* === COUNTDOWN NUMBER TYPOGRAPHY === */
+.countdown-number,
+.chithi-flip-card span.countdown-number {
+    font-family: 'Cinzel', 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1 !important;
+}
