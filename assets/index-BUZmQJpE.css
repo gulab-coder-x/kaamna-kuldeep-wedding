@@ -5582,21 +5582,13 @@ a.\[a\&\]\:hover\:text-accent-foreground:hover {
 .border-\[\#e2c88f\]\/60 { border-color: rgba(226, 200, 143, 0.6) !important; }
 .drop-shadow-\[0_2px_10px_rgba\(98\,39\,57\,0\.3\)\] { filter: drop-shadow(0 2px 10px rgba(98, 39, 57, 0.3)) !important; }
 
-/* Enhanced high-visibility Gold Text */
+/* Enhanced high-visibility Radiant Gold Text for All-Dark Theme */
 .text-gold {
-    background: linear-gradient(125deg, #A27018 0%, #D4AF37 25%, #7D520D 50%, #E6C26E 75%, #9E7428 100%) !important;
+    background: linear-gradient(125deg, #FFF8E1 0%, #F8DC89 25%, #E2C88F 55%, #FFE28F 80%, #D4AF37 100%) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     color: transparent !important;
-}
-
-/* Luminous gold for dark sections (Footer & IntroGate) */
-footer .text-gold, [code-path*="Footer"] .text-gold, [code-path*="IntroGate"] .text-gold {
-    background: linear-gradient(125deg, #FFF2C0 0%, #F8DC89 28%, #E2C88F 55%, #FFE28F 80%, #D4AF37 100%) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    color: transparent !important;
-    filter: drop-shadow(0 2px 10px rgba(226, 200, 143, 0.40)) !important;
+    filter: drop-shadow(0 2px 14px rgba(226, 200, 143, 0.55)) !important;
 }
 
 /* Highlight text outline */
@@ -5890,29 +5882,51 @@ h2.font-script.text-gold {
 
 
 [code-path*="InviteMessage.tsx:48:11"] {
-    color: #622739 !important;
-    text-shadow: 0 1px 4px rgba(98, 39, 57, 0.15) !important;
+    color: #F8DC89 !important;
+    text-shadow: 0 2px 12px rgba(226, 200, 143, 0.45) !important;
 }
 
 [code-path*="InviteMessage.tsx:51:11"] {
-    color: #3e1420 !important;
-    font-weight: 700 !important;
+    color: #FAF5EA !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6) !important;
 }
 
-[code-path*="InviteMessage.tsx:66:9"] {
-    background-color: rgba(255, 255, 255, 0.98) !important;
-    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.10), 0 0 0 1px rgba(197, 160, 89, 0.35) !important;
-}
-
-/* === INVITATION MESSAGE CARD BACKGROUND GRADIENT & TEXTURE === */
+/* === INVITATION MESSAGE CARD BACKGROUND (ALL-DARK ROYAL VELVET) === */
 [code-path*="InviteMessage.tsx:66:9"] {
     position: relative !important;
     overflow: hidden !important;
-    background: linear-gradient(180deg, #FFFDF9 0%, #FAF5EB 50%, #F3E8D5 100%) !important;
-    border: 2px solid rgba(197, 160, 89, 0.65) !important;
-    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.12), 0 0 0 1px rgba(197, 160, 89, 0.25) !important;
+    background: linear-gradient(180deg, rgba(72, 27, 40, 0.90) 0%, rgba(55, 18, 29, 0.95) 60%, rgba(43, 14, 23, 0.98) 100%) !important;
+    border: 2px solid rgba(226, 200, 143, 0.70) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 35px rgba(98, 39, 57, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
 }
 
+[code-path*="InviteMessage.tsx:66:9"] p,
+[code-path*="InviteMessage.tsx:66:9"] span {
+    color: #FAF5EA !important;
+}
+
+[code-path*="InviteMessage.tsx:66:9"] p.font-bold,
+[code-path*="InviteMessage.tsx:66:9"] .whitespace-nowrap {
+    color: #FFF5D0 !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+}
+
+[code-path*="InviteMessage.tsx:66:9"] p.text-\[\#622739\],
+[code-path*="InviteMessage.tsx:66:9"] .text-\[\#622739\] {
+    color: #F8DC89 !important;
+    text-shadow: 0 0 12px rgba(226, 200, 143, 0.4) !important;
+}
+
+[code-path*="InviteMessage.tsx:66:9"] h2.font-script,
+.invite-couple-name {
+    color: #F8DC89 !important;
+    text-shadow: 0 2px 14px rgba(226, 200, 143, 0.5) !important;
+}
+
+[code-path*="InviteMessage.tsx:66:9"] .text-\[\#A67822\] {
+    color: #E2C88F !important;
+}
 
 /* === CIRCULAR COUNTDOWN UNITS === */
 .chithi-flip-card {
@@ -5921,15 +5935,18 @@ h2.font-script.text-gold {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    background: linear-gradient(180deg, #622739 0%, #481b28 50%, #2b0e17 100%) !important;
+    border: 2px solid rgba(226, 200, 143, 0.85) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
 }
 
 [code-path="src/sections/CountdownCard"],
 .countdown-main-card {
     position: relative !important;
     overflow: hidden !important;
-    background: linear-gradient(180deg, #FFFDF9 0%, #FAF5EB 50%, #F3E8D5 100%) !important;
-    border: 2px solid rgba(197, 160, 89, 0.65) !important;
-    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.12), 0 0 0 1px rgba(197, 160, 89, 0.25) !important;
+    background: linear-gradient(180deg, rgba(72, 27, 40, 0.90) 0%, rgba(55, 18, 29, 0.95) 60%, rgba(43, 14, 23, 0.98) 100%) !important;
+    border: 2px solid rgba(226, 200, 143, 0.70) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 35px rgba(98, 39, 57, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
     padding-top: 3.25rem !important;
     padding-bottom: 3.25rem !important;
 }
@@ -5942,13 +5959,80 @@ h2.font-script.text-gold {
     }
 }
 
-/* === EVENTS CARD BACKGROUND SAME AS COUNTDOWN === */
+.countdown-main-card .text-\[\#8a6f4d\],
+.countdown-main-card .text-\[\#C5A059\] {
+    color: #E2C88F !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+}
+
+.countdown-main-card .font-medium,
+.countdown-main-card .uppercase {
+    color: #E2C88F !important;
+}
+
+/* === EVENTS CARD BACKGROUND (ALL-DARK ROYAL VELVET) === */
 [code-path*="Events.tsx:28:9"] {
     position: relative !important;
     overflow: hidden !important;
-    background: linear-gradient(180deg, #FFFDF9 0%, #FAF5EB 50%, #F3E8D5 100%) !important;
-    border: 2px solid rgba(197, 160, 89, 0.65) !important;
-    box-shadow: 0 20px 50px rgba(98, 39, 57, 0.12), 0 0 0 1px rgba(197, 160, 89, 0.25) !important;
+    background: linear-gradient(180deg, rgba(72, 27, 40, 0.90) 0%, rgba(55, 18, 29, 0.95) 60%, rgba(43, 14, 23, 0.98) 100%) !important;
+    border: 2px solid rgba(226, 200, 143, 0.70) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 35px rgba(98, 39, 57, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+[code-path*="Events.tsx:30:11"] {
+    border-color: rgba(226, 200, 143, 0.40) !important;
+}
+
+[code-path*="Events.tsx:28:9"] .rounded-full.bg-\[\#FAF7F2\],
+[code-path*="Events.tsx:33:11"] .bg-\[\#FAF7F2\] {
+    background-color: #622739 !important;
+    border-color: rgba(226, 200, 143, 0.7) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+[code-path*="Events.tsx:42:11"] {
+    color: #E2C88F !important;
+}
+
+[code-path*="Events.tsx:48:11"] {
+    color: #FFF5D0 !important;
+}
+
+[code-path*="Events.tsx:56:13"] {
+    color: #FAF5EA !important;
+}
+
+[code-path*="Events.tsx:60:13"] {
+    color: #E2C88F !important;
+}
+
+/* === VENUE SECTION DARK THEME STYLING === */
+[code-path*="Venue.tsx:13:11"] {
+    color: #FFF5D0 !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+[code-path*="Venue.tsx:14:11"] {
+    color: #E2C88F !important;
+}
+
+[code-path*="Venue.tsx:21:9"] {
+    border: 2px solid rgba(226, 200, 143, 0.6) !important;
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Calendar & Map Buttons on Dark Theme */
+[code-path*="Venue.tsx:50:11"] a,
+[code-path*="Venue.tsx:50:11"] button {
+    background-color: rgba(98, 39, 57, 0.75) !important;
+    border: 1.5px solid rgba(226, 200, 143, 0.65) !important;
+    color: #FFF5D0 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+[code-path*="Venue.tsx:50:11"] a:hover,
+[code-path*="Venue.tsx:50:11"] button:hover {
+    background-color: #622739 !important;
+    border-color: #E2C88F !important;
 }
 
 /* === EVENTS & INVITATION SECTION PADDING ADJUSTMENT === */
@@ -6048,4 +6132,12 @@ footer[code-path*="Footer.tsx"],
     font-weight: 700 !important;
     letter-spacing: 0.02em !important;
     line-height: 1 !important;
+}
+
+/* === ALL-DARK ROYAL THEME KICKERS & LABELS === */
+[code-path*="Reveal.tsx:36:7"] {
+    color: #E2C88F !important;
+    letter-spacing: 0.35em !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6) !important;
 }
