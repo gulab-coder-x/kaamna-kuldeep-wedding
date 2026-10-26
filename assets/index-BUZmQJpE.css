@@ -5540,7 +5540,8 @@ a.\[a\&\]\:hover\:text-accent-foreground:hover {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 .to-\[\#622739\] {
-    --tw-gradient-to: #622739 var(--tw-gradient-to-position) !important;
+    /* --tw-gradient-to: #622739 var(--tw-gradient-to-position) !important; */
+    --tw-gradient-to: #62273999 var(--tw-gradient-to-position) !important;
 }
 .from-\[\#2b0e17\]\/50 {
     --tw-gradient-from: rgb(43 14 23 / 0.5) var(--tw-gradient-from-position) !important;
@@ -6052,7 +6053,7 @@ footer[code-path*="Footer.tsx"],
 
 /* === HERO ARCH BACKGROUND IMAGE === */
 [code-path*="Hero.tsx:80:11"] {
-    background-image: url('./assets/95f84977489612415e5f46409e6df950.jpg') !important;
+    background-image: url('./95f84977489612415e5f46409e6df950.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
 }
@@ -6062,4 +6063,14 @@ footer[code-path*="Footer.tsx"],
 [code-path*="Couple.tsx"] [code-path*="Aurora.tsx"],
 [code-path*="Couple.tsx:47:5"] > [code-path*="Aurora.tsx"] {
     display: none !important;
+}
+
+/* === HERO AUR FOOTER KO CHHOD KE SABKE BACKGROUND (FLOWER-BG.PNG) === */
+.wedding-middle-wrapper,
+[code-path*="Home.tsx:52:7"] > div.relative:not([code-path*="Hero"]):not([code-path*="Footer"]) {
+    background-color: #FAF7F2 !important;
+    background-image: url('./flower-bg.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center top !important;
 }
