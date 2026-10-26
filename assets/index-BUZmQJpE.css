@@ -6058,10 +6058,14 @@ footer[code-path*="Footer.tsx"],
     display: none !important;
 }
 
-/* === SUBTLE SOFT LIGHT THEME GRADIENT (HERO AUR FOOTER KO CHHOD KAR) === */
+/* === HERO AUR FOOTER KO CHHOD KE SABKE BACKGROUND (DOWNLOAD-7) === */
+.wedding-middle-wrapper,
 [code-path*="Home.tsx:52:7"] > div.relative:not([code-path*="Hero"]):not([code-path*="Footer"]) {
     background-color: #FAF7F2 !important;
-    background: linear-gradient(180deg, #FAF7F2 0%, #FFFDF9 18%, #FAF3EB 42%, #FFFDF9 68%, #F7EFE4 100%) !important;
+    background-image: url('./download-7.webp') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center top !important;
 }
 
 /* === MOBILE PERFORMANCE & SMOOTH 60FPS RENDERING === */
