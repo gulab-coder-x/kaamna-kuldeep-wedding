@@ -5831,18 +5831,33 @@ h2.font-script.text-gold {
 
 @media (orientation: landscape) and (max-height: 850px) {
     [code-path*="IntroGate.tsx:47:9"],
-    [code-path*="IntroGate.tsx:67:9"] {
+    [code-path*="IntroGate.tsx:48:9"],
+    [code-path*="IntroGate.tsx:67:9"],
+    [code-path*="IntroGate.tsx:68:9"],
+    .intro-gate-logo {
         width: 66vmin !important;
     }
-    [code-path*="IntroGate.tsx:47:9"] {
+    [code-path*="IntroGate.tsx:47:9"],
+    [code-path*="IntroGate.tsx:48:9"] {
         right: -33vmin !important;
     }
-    [code-path*="IntroGate.tsx:67:9"] {
+    [code-path*="IntroGate.tsx:67:9"],
+    [code-path*="IntroGate.tsx:68:9"] {
         left: -33vmin !important;
     }
     [code-path*="IntroGate.tsx:103:9"] {
         top: min(calc(50% + 33vmin + 0.85rem), calc(100% - 4.25rem)) !important;
     }
+}
+
+/* === INTRO GATE K&K MONOGRAM LOGO === */
+[code-path*="IntroGate.tsx:48:9"],
+[code-path*="IntroGate.tsx:68:9"],
+.intro-gate-logo {
+    opacity: 0.96 !important;
+    filter: drop-shadow(0 0 18px rgba(226, 200, 143, 0.5)) drop-shadow(0 4px 14px rgba(0, 0, 0, 0.6)) !important;
+    z-index: 20 !important;
+    pointer-events: none !important;
 }
 
 /* === HERO COUPLE NAMES GRAND TYPOGRAPHY === */
