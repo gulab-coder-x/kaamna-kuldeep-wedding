@@ -5854,8 +5854,8 @@ h2.font-script.text-gold {
 [code-path*="IntroGate.tsx:48:9"],
 [code-path*="IntroGate.tsx:68:9"],
 .intro-gate-logo {
-    opacity: 0.96 !important;
-    filter: drop-shadow(0 0 18px rgba(226, 200, 143, 0.5)) drop-shadow(0 4px 14px rgba(0, 0, 0, 0.6)) !important;
+    opacity: 1 !important;
+    filter: brightness(0) invert(1) drop-shadow(0 0 16px rgba(255, 255, 255, 0.7)) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.8)) !important;
     z-index: 20 !important;
     pointer-events: none !important;
 }
